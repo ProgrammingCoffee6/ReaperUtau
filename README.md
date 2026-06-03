@@ -16,6 +16,7 @@ Go to your REAPER settings, into Control/OSC/Web tab. Create two OSC devices, bo
 - Full playback and sound synchronization (Pseudo-ARA)
 - Track 1-14 are now mono-output, so it is possible to track and mix directly in DAW (as long as you are using low-latency plugins, that is)
 - OpenUtau -> REAPER BPM sync
+- Disabling Pre-Rendering, as it interferes with audio sync between OU and REAPER
 
 
 ## Planned features
