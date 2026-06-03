@@ -103,7 +103,7 @@ DLL_API ou_audio_context_t* ou_init_audio_device(
 
   ma_device_config config = ma_device_config_init(ma_device_type_playback);
   config.playback.format = ma_format_f32;
-  config.playback.channels = 2;
+  config.playback.channels = 0;
   config.sampleRate = 44100;
   g_data_callback = callback;
   config.dataCallback = data_callback;
@@ -142,7 +142,7 @@ DLL_API ou_audio_context_t* ou_init_audio_device_auto(
 
   ma_device_config config = ma_device_config_init(ma_device_type_playback);
   config.playback.format = ma_format_f32;
-  config.playback.channels = 2;
+  config.playback.channels = 0;
   config.sampleRate = 44100;
   g_data_callback = callback;
   config.dataCallback = data_callback;
