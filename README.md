@@ -16,19 +16,20 @@ Go to your REAPER settings, into Control/OSC/Web tab. Create two OSC devices, bo
 - Full playback synchronization (Pseudo-ARA)
 - Track 1-14 are now mono-output, so it is possible to track and mix directly in DAW (as long as you are using low-latency plugins, that is)
 - OpenUtau -> REAPER BPM sync
-- Works with MacOS/Windows/Linux
 
 
 ## Planned features
 - Full MIDI syncronization
 - Two-sided BPM syncronization
 - Maybe I will come up with a pretty solution to PDC, but, that's unlikely
+- Windows/Linux builds
 
 
 ## Notes/Known issues
 - It might be slightly desynced first couple times you start playback, due to how OpenUtau deals with render caching. Fixes itself after first three to five playbacks
 - Recommended to stop playback manually
 - AFAIK, latency on master track doesn't influence syncronization, unlike latency on track with OU itself. Treat it like you would live-instrument, not like typical VSTi synth.
+- **IT IS UNTESTED WITH RESAMPLERS OTHER THAN WORLDLINE**. If the sound breaks when you choose another resampler - modify it to support any arbitrary amount of output channels. 
 
 
 ## AI Usage Disclaimer
