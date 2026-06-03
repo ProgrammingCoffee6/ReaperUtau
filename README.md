@@ -26,6 +26,7 @@ Go to your REAPER settings, into Control/OSC/Web tab. Create two OSC devices, bo
 
 
 ## Notes/Known issues
+- Windows/Linux users - please, recompile WorldLine resampler and replace default one within "runtimes/%yourOS%/native" folder 
 - It might be slightly desynced first couple times you start playback, due to how OpenUtau deals with render caching. Fixes itself after first three to five playbacks
 - Recommended to stop playback manually
 - AFAIK, latency on master track doesn't influence syncronization, unlike latency on track with OU itself. Treat it like you would live-instrument, not like typical VSTi synth.
